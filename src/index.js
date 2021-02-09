@@ -1,4 +1,5 @@
 import './styles.css';
+import './scripts/prelooader'
 import './scripts/modal';
 import './scripts/telegram';
 import './scripts/slider';

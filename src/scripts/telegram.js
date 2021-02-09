@@ -1,5 +1,4 @@
 
-
 let user_name = document.getElementById('user-name');
 let phone = document.getElementById('tel');
 let email = document.getElementById('email');
@@ -27,7 +26,7 @@ function getClientInfo(){
 }
 
 btn.addEventListener('click', e => {
-    alert('Спасибо, мы вам перезвоним!')
     form.setAttribute('action', `https://api.telegram.org/bot1567344190:AAGJOym1zRzGxzrCa4qHom70VLgIcaHy2f8/sendMessage?chat_id=-1001391095034&parse_mode=html&text=${getClientInfo()}`);
-    setTimeout(window.open('index.html', ), 3000)
+
+
 })
